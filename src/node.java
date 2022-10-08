@@ -19,5 +19,6 @@ public class node  {
     }
     public void setVisited(Boolean visited) {
         this.visited = visited;
+
     }
 }

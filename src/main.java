@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.Stack;
 
 public class main {
@@ -26,7 +27,33 @@ public class main {
         g.addEdge(4,2);
 
        //g.print();
-        dfs d = new dfs(g,g.adjList.get(0).get(0));
+
+        Scanner sc = new Scanner(System.in);
+
+        switch(sc.nextInt())
+        {
+            case 1:
+            {
+                dfs d = new dfs(g,g.adjList.get(0).get(0));
+                break;
+            }
+            case 2:
+            {
+                bfs b = new bfs(g,g.adjList.get(0).get(0));
+                break;
+            }
+            default:
+            {
+                break;
+            }
+
+        }
+
+
+
+
+
+
 
 
 
